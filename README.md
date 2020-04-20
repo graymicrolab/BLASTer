@@ -12,12 +12,12 @@ align-o-tron2002.py. (Both of which date from ~2016.) Developed on a Mac
 with OSX 10.15.4.
 
 Dependencies:
-Python 3.8.2
-Biopython 1.76
-matplotlib 3.2.1
-MUSCLE 3.8.31 (www.drive5.com/muscle/downloads.htm)
-BLAST+ 2.10.0 (ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
-Logomaker 0.8 (Tareen & Kinney 2019 Bioinformatics btz921. bioRxiv doi:10.1101/6
+  Python 3.8.2
+  Biopython 1.76
+  matplotlib 3.2.1
+  MUSCLE 3.8.31 (www.drive5.com/muscle/downloads.htm)
+  BLAST+ 2.10.0 (ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
+  Logomaker 0.8 (Tareen & Kinney 2019 Bioinformatics btz921. bioRxiv doi:10.1101/6
 
 I recommend reading the BLASTer Tutorial PDF for instructions on how to use
 this software.
