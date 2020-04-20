@@ -237,8 +237,9 @@ try:
 except: 
     print("No settings file has been created. You will need to enter")
     
-    email = input("1. a valid email address (required by NCBI): ")
+    asking = True    
     while asking:
+        email = input("1. a valid email address (required by NCBI): ")
         if email.upper() == "Q" or email.upper() == "QUIT":
             sys.exit()
         elif email.upper() == "H" or email.upper() == "HELP":
@@ -249,9 +250,11 @@ except:
             sys.exit()
         else:
             asking == False
+            break
               
-    standalone_path = input("2. the path to the folder containing the standalone MUSCLE and blastp applications: ")
+    asking = True
     while asking:
+        standalone_path = input("2. the path to the folder containing the standalone MUSCLE and blastp applications: ")
         if standalone_path.upper() == "Q" or standalone_path.upper() == "QUIT":
             sys.exit()
         elif standalone_path.upper() == "H" or standalone_path.upper() == "HELP":
@@ -262,9 +265,11 @@ except:
             sys.exit()
         else:
             asking == False
+            break
             
-    basic_save_path = input("3. the path to the folder you want to save your data in: ")
+    asking = True
     while asking:
+        basic_save_path = input("3. the path to the folder you want to save your data in: ")
         if standalone_path.upper() == "Q" or standalone_path.upper() == "QUIT":
             sys.exit()
         elif standalone_path.upper() == "H" or standalone_path.upper() == "HELP":
@@ -275,6 +280,7 @@ except:
             sys.exit()
         else:
             asking == False
+            break
 
     # write a new settings file
     outfile = open("BLASTer_settings.txt", "w")
@@ -759,7 +765,7 @@ while True:
                         base_name = remove_extension(fastafilename)         
                         aln_name = base_name + ".aln"
                         pathed_aln_name = os.path.join(alignment_path, aln_name)
-                        program = standalone_path + "/muscle3.8.31_i86darwin64"
+                        program = mstandalone_path + "/muscle3.8.31_i86darwin64"
                         
                         try:
                             cline = MuscleCommandline(program, input=pathed_fastafilename, out=pathed_aln_name)  
