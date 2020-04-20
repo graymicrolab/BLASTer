@@ -105,7 +105,7 @@ import matplotlib.gridspec as gridspec
 # HELP SYSTEM TOPICS
 
 help_dict = {
-    "license": "Copyright 2020 by Michael J. Gray. This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit creativecommons.org/licenses/by-sa/4.0/",
+    "license": "Copyright 2020 by Michael J. Gray. This work is licensed under the GNU GPLv3 License. To view a copy of this license, visit choosealicense.com/licenses/gpl-3.0/",
     "contact": "You can contact the author of this software at mjgray@uab.edu.",
     "tech support": "Unfortunately, due to my time constraints, this software is available ‘as-is’ and I cannot promise any tech support or future updates. I hope it’s helpful, but it may need some tweaking, especially as the underlying tools get updated in the future.",
     "credits": "BLASTer was written with Python 3.8.2, Biopython 1.76, MUSCLE 3.8.31, BLAST+ 2.10.0, matplotlib 3.2.1, and Logomaker 0.8.",
