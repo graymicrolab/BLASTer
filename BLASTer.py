@@ -149,7 +149,7 @@ def helper(topic):
             print("-------------------------------------------\n")
             asking = False
             return True
-        elif email.upper() == "Q" or email.upper() == "QUIT":
+        elif choice.upper() == "Q" or choice.upper() == "QUIT":
             sys.exit()
 
         answer = help_dict.get(choice, "Please select one of the listed topics.")
