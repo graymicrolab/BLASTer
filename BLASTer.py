@@ -767,7 +767,7 @@ while True:
                         base_name = remove_extension(fastafilename)         
                         aln_name = base_name + ".aln"
                         pathed_aln_name = os.path.join(alignment_path, aln_name)
-                        program = mstandalone_path + "/muscle3.8.31_i86darwin64"
+                        program = standalone_path + "/muscle3.8.31_i86darwin64"
                         
                         try:
                             cline = MuscleCommandline(program, input=pathed_fastafilename, out=pathed_aln_name)  
