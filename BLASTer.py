@@ -144,7 +144,7 @@ def helper(topic):
 
     asking = True
     while asking:
-        choice = input("Available help topics (or ‘X’ to exit):\n" + topics_string + "\n")
+        choice = input("Available help topics (or ‘X’ to exit back to the main program):\n" + topics_string + "\n")
         if choice.upper() == "X" or choice.upper() == "EXIT" or choice.upper() == "":
             print("-------------------------------------------\n")
             asking = False
