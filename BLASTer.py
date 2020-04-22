@@ -1,6 +1,6 @@
 # BLASTer
 version = "4"
-updated = "April 20, 2020"
+updated = "April 22, 2020"
 
 """
 BLASTer is a tool which automates a workflow for identifying homologs of
@@ -989,7 +989,7 @@ while True:
         second_row = "Input sequence: " + useq + "\n"  
         third_row = "E-Value less than: " + str(e_thresh) + "\n"     
         fourth_row = "Total Hits: " + str(hit_count) + "\n"     
-        fifth_row = "Species \t Occurance\n"
+        fifth_row = "Species \t Occurrence\n"
         save_file.write(first_row)    
         save_file.write(second_row)   
         save_file.write(third_row)   
@@ -1014,7 +1014,7 @@ while True:
             row = species + "\t" + str(species_counter[species]) + "\n"
             save_file.write(row)
 
-        print("Species occurance table for " + name + " at e-value < " + str(e_thresh) + " (" + str(len(species_counter)) + " species) saved as " + tablefile)
+        print("Species occurrence table for " + name + " at e-value < " + str(e_thresh) + " (" + str(len(species_counter)) + " species) saved as " + tablefile)
         save_file.close()
         search_handle.close()
         
@@ -1026,7 +1026,7 @@ while True:
         second_row = "Input sequence: " + useq + "\n"  
         third_row = "E-Value less than: " + str(e_thresh) + "\n"     
         fourth_row = "Total Hits: " + str(hit_count) + "\n"     
-        fifth_row = "Genus \t Occurance \n"
+        fifth_row = "Genus \t Occurrence \n"
         save_file.write(first_row)    
         save_file.write(second_row)   
         save_file.write(third_row)   
@@ -1051,7 +1051,7 @@ while True:
             row = genus + "\t" + str(genus_counter[genus]) + "\n"
             save_file.write(row)
 
-        print("Genus occurance table for " + name + " at e-value < " + str(e_thresh) + " (" + str(len(genus_counter)) + " genera) saved as " + tablefile)
+        print("Genus occurrence table for " + name + " at e-value < " + str(e_thresh) + " (" + str(len(genus_counter)) + " genera) saved as " + tablefile)
         save_file.close()
         search_handle.close()
 
