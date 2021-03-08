@@ -1,6 +1,6 @@
 # BLASTer
-version = "4"
-updated = "April 22, 2020"
+version = "4.1"
+updated = "March 8, 2021"
 
 """
 BLASTer is a tool which automates a workflow for identifying homologs of
@@ -11,8 +11,8 @@ automation of what I want to know about any protein I plan on working with.
 Based on Python 2 code previously found in scripts BLASTer_v3.3.py and
 align-o-tron2002.py. (Both of which date from ~2016.)
 
-Python 3.8.2
-Biopython 1.76
+Python 3.9.2
+Biopython 1.78
 matplotlib 3.2.1
 MUSCLE 3.8.31 (www.drive5.com/muscle/downloads.htm)
 BLAST+ 2.10.0 (ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
@@ -90,7 +90,6 @@ from Bio import AlignIO
 from Bio import SearchIO
 from Bio.Seq import Seq
 from Bio.Blast import NCBIWWW
-from Bio.Alphabet import IUPAC
 from Bio.SeqRecord import SeqRecord
 from Bio.Align.Applications import MuscleCommandline
 from Bio.Blast.Applications import NcbiblastpCommandline
@@ -386,7 +385,7 @@ while True:
                 continue
 
     # convert the input sequence into a Biopython SeqRecord            
-        input_seq = Seq(useq, IUPAC.protein)
+        input_seq = Seq(useq)
         input_record = SeqRecord(input_seq, id=name, name=name, description="input sequence for BLAST search")
 
     # advance to the next step
